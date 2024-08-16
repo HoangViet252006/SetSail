@@ -1,0 +1,108 @@
+/* Mobile and Tablet */
+
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .show-on-mobile-tablet {
+        display: block;
+    }
+    .header {
+        height: 68px;
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+    }
+    .header__navbar {
+        width: 100%;
+        background-color: var(--primary-color);
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .header__navbar-avatar {
+        width: 100%;
+        background-color: var(--primary-color);
+    }
+    .header__navbar-avatar-img {
+        width: 38px;
+    }
+    .navbar-img-left {
+        height: auto;
+    }
+    .navbar-img-right {
+        height: auto;
+    }
+    .content-header {
+        margin-top: 60px;
+    }
+    .content-sub-heading {
+        width: 100%;
+    }
+    .about-tour-info {
+        margin-top: 32px;
+    }
+    .about-tour__header {
+        margin-bottom: 0px;
+    }
+    .about-tour-right-img {
+        height: 100%;
+    }
+    .about-tour-right {
+        margin-top: 32px;
+    }
+    .header__navbal-mobile-menu {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .show-on-tablet {
+        display: block;
+    }
+    .price-info-cost {
+        font-size: 2.5rem;
+    }
+    .price-info-name {
+        font-size: 2.5rem;
+    }
+    .price-contain {
+        margin: 0;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .show-on-mobile {
+        display: block;
+    }
+    .content {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .price-info-cost {
+        font-size: 3rem;
+    }
+    .price-info-name {
+        font-size: 3rem;
+    }
+    .price-contain {
+        margin-top: 48px;
+    }
+    .footer {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

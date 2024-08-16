@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://127.0.0.1/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header__navbar">
+                <div class="header__navbar-info hide-on-mobile-tablet">
+                    <ul class="header__navbar-contact">
+                        <li class="header__navbar-item">
+                            <i class="header__navbar-icon fa-solid fa-envelope"></i>
+                            <a href="#" class="header__navbar-link">hoangviet252006@gmail.com</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <i class="header__navbar-icon fa-solid fa-phone"></i>
+                            <a href="#" class="header__navbar-link">0987.169.066</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <i class="header__navbar-icon fa-solid fa-location-dot"></i>
+                            <a href="#" class="header__navbar-link">Dai Bai, Dai Thinh, Me linh, Ha Noi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__navbal-mobile-menu show-on-mobile-tablet">
+                    <a href="#" class="header__navbar-mobile-link">
+                        <label for="header__menu-checkbox" class="header___navbar-mobile-menu-checkbox">
+                            <svg class="header__navbar-mobile-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="17px" viewBox="0 0 26 20" enable-background="new 0 0 26 20" xml:space="preserve">
+                                    <rect x="10.5" width="13.7" height="2.4" fill="#fff"></rect>
+                                    <rect x="8" y="8.8" width="16.2" height="2.4" fill="#fff"></rect>
+                                    <rect x="1.7" y="17.6" width="22.5" height="2.4" fill="#fff"></rect>
+                                    </svg>
+                                </label>
+                    </a>
+                </div>
+
+
+                <div class="header__navbar-avatar-logo show-on-mobile-tablet">
+                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png" alt="dark logo" class="header__navbar-avatar-logo-img">
+                </div>
+
+                <div class="header__navbar-login">
+                    <ul class="header__navbar-lists hide-on-mobile-tablet">
+                        <li class="header__navbar-lists-item">
+                            <a href="#" class="header__navbar-lists-link">
+                                <i class="header__navbar-lists-icon fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-lists-item">
+                            <a href="#" class="header__navbar-lists-link">
+                                <i class="header__navbar-lists-icon  fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-lists-item">
+                            <a href="#" class="header__navbar-lists-link">
+                                <i class="header__navbar-lists-icon  fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-lists-item">
+                            <a href="#" class="header__navbar-lists-link">
+                                <i class="header__navbar-lists-icon  fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <li class="header__navbar-language hide-on-mobile-tablet">
+                        English
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="header__navbar-languages">
+                            <li class="header__navbar-language-item">
+                                <a href="#" class="header__navbar-language-link">Vietnamese</a>
+                            </li>
+                            <li class="header__navbar-language-item">
+                                <a href="#" class="header__navbar-language-link">French</a>
+                            </li>
+                            <li class="header__navbar-language-item">
+                                <a href="#" class="header__navbar-language-link">German</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <div class="header__navbar-avatar">
+
+
+                        <a href="#" class="header__navbar-avatar-link">
+                            <svg version="1.1" x="0px" y="0px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve" class="header__navbar-avatar-img">
+                                <g>
+                                <path fill="currentColor" d="M11.5,14.1c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C15.5,12.3,13.7,14.1,11.5,14.1z M11.5,7.3
+                                            c-1.6,0-2.8,1.3-2.8,2.8c0,1.6,1.3,2.8,2.8,2.8s2.8-1.3,2.8-2.8C14.3,8.5,13,7.3,11.5,7.3z"></path>
+                                <path fill="currentColor" d="M11.5,23c-3.1,0-5.9-1.2-8.1-3.4c-2.2-2.2-3.4-5-3.4-8.1s1.2-5.9,3.4-8.1c2.2-2.2,5-3.4,8.1-3.4
+                                            s5.9,1.2,8.1,3.4c2.2,2.2,3.4,5,3.4,8.1s-1.2,5.9-3.4,8.1C17.4,21.8,14.5,23,11.5,23z M11.5,1.2C5.8,1.2,1.2,5.9,1.2,11.5
+                                            s4.6,10.3,10.3,10.3s10.3-4.6,10.3-10.3S17.1,1.2,11.5,1.2z"></path>
+                                <path fill="currentColor" d="M11.5,23c-1.5,0-2.9-0.3-4.2-0.8c-0.2-0.1-0.4-0.3-0.4-0.6v-5.3c0-1.8,1.5-3.3,3.3-3.3h2.6
+                                            c1.8,0,3.3,1.5,3.3,3.3v5.3c0,0.2-0.1,0.5-0.4,0.6C14.4,22.7,12.9,23,11.5,23z M8.1,21.2c1.1,0.4,2.2,0.6,3.4,0.6s2.3-0.2,3.4-0.6
+                                            v-4.9c0-1.2-0.9-2.1-2.1-2.1h-2.6c-1.2,0-2.1,0.9-2.1,2.1V21.2z"></path>
+                                </g>
+                                </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__heading hide-on-mobile-tablet">
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-centered.png" alt="dark logo" class="header__heading-img">
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="content__navbar">
+                <ul class="navbar hide-on-mobile-tablet">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link navbar-link--active">Home</a>
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Travel Agency</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Winter holidays</a>
+                            </li>
+
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link subnav-link--active">Exotic Destinations</a>
+                            </li>
+
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Summer Holidays</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">City Tours</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">News Year Trips</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Destination Carousel</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Wine Tours</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Vacation Showcase</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link ">Landing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Pages</a>
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">About Us</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">What We Offer</a>
+                            </li>
+
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Out Team</a>
+                            </li>
+
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Get In Touch</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Contact Us</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">FAQ Page</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Coming Soon</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Error Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Destination</a>
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Destination List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Destination Slider</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Destination Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Tours</a>
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Standart List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Gallery List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Split List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Tour Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Blog</a>
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Blog Masonry</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Blog Standart</a>
+
+                                <i class="subnav-icon pull-right fa-solid fa-angle-right"></i>
+                                <ul class="subnav2">
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Right Sidebar</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Left Sidebar</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Without Sidebar</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Post Types</a>
+                                <i class="subnav-icon pull-right fa-solid fa-angle-right"></i>
+                                <ul class="subnav2">
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Standart</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Gallery</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Link</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Quote</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Video</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Audio</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">No Sildebar</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Shop</a>
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Product List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Product Single</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Shop Layout</a>
+                                <i class="subnav-icon pull-right fa-solid fa-angle-right"></i>
+
+                                <ul class="subnav2">
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Three Columns</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Four Columns</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Full columns</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Shop Pages</a>
+                                <i class="subnav-icon pull-right fa-solid fa-angle-right"></i>
+                                <ul class="subnav2">
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">My account</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Cart</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a href="#" class="subnav-link">Checkout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Elements</a>
+                    </li>
+                </ul>
+                <!-- <div class="super-subnav row">
+                    <div class="super-subnav-heading col c-3">FEATURED
+                        <ul class="super-subnav-lists">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Tour List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Tour Carousel</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Tours Filter</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Destination With Tours</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Destination List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Destination Fullscreen Slider</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Fullscreen Sections</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Reviews Carousel</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="super-subnav-heading col c-3">PRESENTATION
+                        <ul class="super-subnav-lists">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Team</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Blog List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Shop List</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Testimonials</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Banner</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Clients</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Parallax Section</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Video Button</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="super-subnav-heading col c-3">CLASSIC
+                        <ul class="super-subnav-lists">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Accordions</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Tabs</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Buttons</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Google Maps</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Contact Form</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Progress Bar</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Countdown</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Counters</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Call To Action</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="super-subnav-heading col c-3">TYPOGRAPHY
+                        <ul class="super-subnav-lists">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Headings</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Columns</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Buttons</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Section Title</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Blockquote</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Dropcaps</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Highlights</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Icon with text</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Separators</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="grid wide">
+                    <input type="checkbox" hidden id="header__menu-checkbox">
+                    <ul class="super-subnav-mobile-list">
+                        <li class="super-subnav-mobile-item">
+                            <a href="#" class="super-subnav-mobile-link super-subnav-mobile-link--active">Home</a>
+                            <label for="super-subnav-mobile-checkbox-btn" class="super-subnav-mobile-checkbox">
+                                <i class="super-subnav-mobile-icon fa-solid fa-angle-right"></i>
+                            </label>
+                        </li>
+                        <input type="checkbox" hidden id="super-subnav-mobile-checkbox-btn" class="supver-subnav-checkbtn">
+                        <ul class="super-subnav-mobile-list">
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link super-subnav-mobile-link--active">Travel Agency</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Winter holidays</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Destinations</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Exotic Destinations</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Summer Holidays</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">City Tours</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">News Year Trips</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Wine Tours</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Vacation Showcase</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Landing</a>
+                            </li>
+                        </ul>
+                        <li class="super-subnav-mobile-item">
+                            <a href="#" class="super-subnav-mobile-link">Pages</a>
+                            <label for="super-subnav-mobile-checkbox-btn2" class="super-subnav-mobile-checkbox">
+                                <i class="super-subnav-mobile-icon fa-solid fa-angle-right"></i>
+                            </label>
+                        </li>
+                        <input type="checkbox" hidden id="super-subnav-mobile-checkbox-btn2" class="supver-subnav-checkbtn2">
+                        <ul class="super-subnav-mobile-list">
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link super-subnav-mobile-link--active">About Us</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">What We Offer</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Out Team</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Get In Touch</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Contact Us</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">FAQ Page</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Coming Soon</a>
+                            </li>
+                            <li class="super-subnav-mobile-item">
+                                <a href="#" class="super-subnav-mobile-link">Error Page</a>
+                            </li>
+                        </ul>
+
+                        </li>
+                        <li class="super-subnav-mobile-item">
+                            <a href="#" class="super-subnav-mobile-link">Destinations</a>
+                            <i class="super-subnav-mobile-icon fa-solid fa-angle-right"></i>
+                        </li>
+                        <li class="super-subnav-mobile-item">
+                            <a href="#" class="super-subnav-mobile-link">Tours</a>
+                            <i class="super-subnav-mobile-icon fa-solid fa-angle-right"></i>
+                        </li>
+                        <li class="super-subnav-mobile-item">
+                            <a href="#" class="super-subnav-mobile-link">Blog</a>
+                            <i class="super-subnav-mobile-icon fa-solid fa-angle-right"></i>
+                        </li>
+                        <li class="super-subnav-mobile-item">
+                            <a href="#" class="super-subnav-mobile-link">Shop</a>
+                            <i class="super-subnav-mobile-icon fa-solid fa-angle-right"></i>
+                        </li>
+                        <li class="super-subnav-mobile-item">
+                            <a href="#" class="super-subnav-mobile-link">Elements</a>
+                            <i class="super-subnav-mobile-icon fa-solid fa-angle-right"></i>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="content">
+                    <div class="grid wide">
+                        <div class="content-lists-img row">
+                            <div class="content-list-icon col l-1 m-0 c-0">
+                                <i class="content__nav-icon fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="col l-7 m-8 c-8">
+                                <img src="//setsail.select-themes.com/wp-content/uploads/2018/09/travel-slide-1.jpg" alt="" class="navbar-img-left">
+                            </div>
+                            <div class="col l-3 m-4 c-4">
+                                <img src="//setsail.select-themes.com/wp-content/uploads/2018/09/travel-slide-2.jpg" alt="" class="navbar-img-right">
+                            </div>
+                            <div class="content-list-icon col l-1 m-0 c-0">
+                                <i class="content__nav-icon fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="content-popular row">
+                            <div class="col l-5 m-12 c-12">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-img-1.png" alt="" class="content-popular-img">
+                            </div>
+
+                            <div class="col l-6 m-12 c-12">
+                                <div class="content-popular__header">
+                                    <div class="content-popular__heading">Our Popular Tours</div>
+                                    <p class="content-popular__desc">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver ra nulla ut metus varius laoreet. Quisque rutrum.</p>
+                                </div>
+
+                                <div class="content-popular__chart">
+                                    <div class="content-popular-chart-heading">
+                                        <div class="content-populat__chart-name">Countryside</div>
+                                        <div class="content-populat__chart-quantity">76%</div>
+                                    </div>
+                                    <div class="content-popular-chart-express">
+                                        <div class="content-popular-chart-express-cur"></div>
+                                    </div>
+                                </div>
+
+                                <div class="content-popular__chart">
+                                    <div class="content-popular-chart-heading">
+                                        <div class="content-populat__chart-name">Vineyard92</div>
+                                        <div class="content-populat__chart-quantity">92%</div>
+                                    </div>
+                                    <div class="content-popular-chart-express">
+                                        <div class="content-popular-chart-express-cur2"></div>
+                                    </div>
+                                </div>
+
+                                <div class="content-popular__chart">
+                                    <div class="content-popular-chart-heading">
+                                        <div class="content-populat__chart-name">Wine Tasting</div>
+                                        <div class="content-populat__chart-quantity">86%</div>
+                                    </div>
+                                    <div class="content-popular-chart-express">
+                                        <div class="content-popular-chart-express-cur3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-img-2.jpg" alt="" class="content-field-img">
+
+                        <div class="content-header">
+                            <div class="content-heading">The Best Tours</div>
+                            <div class="content-sub-heading">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis</div>
+                        </div>
+
+                        <div class="content-list-prices row">
+                            <div class="col l-3 m-6 prices-left">
+                                <a class="price-contain col l-12 m-12">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-33.jpg" alt="" class="price-img">
+                                    <div class="price-info">
+                                        <div class="price-info-name">Wine Festival</div>
+                                        <div class="price-info-cost">$550</div>
+                                    </div>
+                                </a>
+
+                                <a class="price-contain col l-12 m-12">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-34.jpg" alt="" class="price-img">
+                                    <div class="price-info">
+                                        <div class="price-info-name">Wine Tasting</div>
+                                        <div class="price-info-cost">$920</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col l-3 m-6 prices-left">
+                                <a class="price-contain col l-12 m-12">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-37.jpg" alt="" class="price-img">
+                                    <div class="price-info">
+                                        <div class="price-info-name">Champagne</div>
+                                        <div class="price-info-cost">$2130</div>
+                                    </div>
+                                </a>
+
+                                <a class="price-contain col l-12 m-12">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-38.jpg" alt="" class="price-img">
+                                    <div class="price-info">
+                                        <div class="price-info-name">Villages</div>
+                                        <div class="price-info-cost">$850</div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+
+
+                            <div class="col l-3 m-6">
+                                <a class="price-contain price-contain1 col l-12 m-12">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-35-650x1300.jpg" alt="" class="price-img">
+                                    <div class="price-info">
+                                        <div class="price-info-name">Camping</div>
+                                        <div class="price-info-cost">$1550</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col l-3 m-6">
+                                <a class="price-contain col l-12 m-12">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-36.jpg" alt="" class="price-img">
+                                    <div class="price-info">
+                                        <div class="price-info-name">Harvest</div>
+                                        <div class="price-info-cost">$2600</div>
+                                    </div>
+                                </a>
+                                <a class="price-contain col l-12 m-12">
+                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-39.jpg" alt="" class="price-img">
+                                    <div class="price-info">
+                                        <div class="price-info-name">LocalWines</div>
+                                        <div class="price-info-cost">$1300</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="content-data">
+                            <div class="row">
+                                <div class="content-data-header col l-3 m-6 c-12">
+                                    <div class="content-data-heading">45</div>
+                                    <div class="content-data-sub-heading">Glasses of Wine</div>
+                                    <p class="content-data-desc">Cap at perspic iatis unde omnis iste natus error sit volup tatem
+                                    </p>
+                                </div>
+                                <div class="content-data-header col l-3 m-6 c-12">
+                                    <div class="content-data-heading">126</div>
+                                    <div class="content-data-sub-heading">Years of experience</div>
+                                    <p class="content-data-desc">Sop ut perspic iatis ande emnis iste natus error sit volup fatom
+                                    </p>
+                                </div>
+                                <div class="content-data-header col l-3 m-6 c-12">
+                                    <div class="content-data-heading">452</div>
+                                    <div class="content-data-sub-heading">Unique Wines</div>
+                                    <p class="content-data-desc">Sed ut perspic iatis unde omnis iste natus error sit volup tatem
+                                    </p>
+                                </div>
+                                <div class="content-data-header col l-3 m-6 c-12">
+                                    <div class="content-data-heading">247</div>
+                                    <div class="content-data-sub-heading">Sorts of Wine</div>
+                                    <p class="content-data-desc">Cap of qerspic iatis ande umnis lcte natus error sit volup fatem
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-60 row">
+                            <div class="about-tour col l-8 m-11 c-12">
+                                <div class="about-tour__header">
+                                    <div class="about-tour__heading">Our Popular Tours</div>
+                                    <div class="about-tour__sub-heading">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo</div>
+                                </div>
+                                <div class="row">
+                                    <div class="about-tour-info col l-6 m-6 c-12">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-custom-img-1.png" alt="" class="about-tour-img">
+                                        <div class="about-tour-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+                                    </div>
+                                    <div class="about-tour-info col l-6 m-6 c-12">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-custom-img-1.png" alt="" class="about-tour-img">
+                                        <div class="about-tour-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+                                    </div>
+                                    <div class="about-tour-info col l-6 m-6 c-12">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-custom-img-1.png" alt="" class="about-tour-img">
+                                        <div class="about-tour-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+                                    </div>
+                                    <div class="about-tour-info col l-6 m-6 c-12">
+                                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-custom-img-1.png" alt="" class="about-tour-img">
+                                        <div class="about-tour-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col l-4 m-5 c-7 about-tour-right">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-img-3.png" alt="" class="about-tour-right-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-logo">
+                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-footer.png" alt="" class="footer-logi__img">
+                        </div>
+                        <p class="footer-decs">Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                        </p>
+                        <ul class="footer-contact">
+                            <li class="footer-item">
+                                <i class="footer-icon fa-solid fa-envelope"></i>
+                                <a href="#" class="footer-link">hoangviet252006@gmail.com</a>
+                            </li>
+                            <li class="footer-item">
+                                <i class="footer-icon fa-solid fa-phone"></i>
+                                <a href="#" class="footer-link">0987.169.066</a>
+                            </li>
+                            <li class="footer-item">
+                                <i class="footer-icon fa-solid fa-location-dot"></i>
+                                <a href="#" class="footer-link">Dai Bai, Dai Thinh, Me linh, Ha Noi</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-heading">Our Recent Posts</div>
+                        <div class="footer-sub-heading">
+                            <div class="footer-decs">
+                                <a href="#" class="footer-decs-link">Visit Thailand, Bali And China</a>
+                            </div>
+                            <div class="footer-time">
+                                <div class="footer-decs-time-link">September 7, 2016</div>
+                            </div>
+                        </div>
+                        <div class="footer-sub-heading">
+                            <div class="footer-decs">
+                                <a href="#" class="footer-decs-link">The Sound Of Our Jungle</a>
+                            </div>
+                            <div class="footer-time">
+                                <div class="footer-decs-time-link">September 7, 2016</div>
+                            </div>
+                        </div>
+                        <div class="footer-sub-heading">
+                            <div class="footer-decs">
+                                <a href="#" class="footer-decs-link">New Year, New Resolutions!</a>
+                            </div>
+                            <div class="footer-time">
+                                <div class="footer-decs-time-link">September 7, 2016</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-heading">Subscribe to our Newsletter</div>
+                        <div class="footer-decs">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</div>
+                        <input type="text" placeholder="Name" class="footer-input">
+                        <input type="email" placeholder="Email" class="footer-input">
+                        <div class="btn">SUBSCRIBE</div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-heading">Our Instagram</div>
+                        <div class="footer-decs">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</div>
+                    </div>
+                </div>
+                <div class="footer__text">© 2018
+                    <span class="footer-text-color">Qode Interactive</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+
+</html>
